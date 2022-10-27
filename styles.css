@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    border: solid 1px black;
+}
+
+p.normal {
+    word-wrap: normal;
+}
+
+p.break {
+    word-wrap: break-word;
+}
+
+img {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 4px;
+    max-width: 100%;}
+
+.pic {
+    max-height: 100px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+}
+
+.image1 {
+    max-height: 350px;
+    max-width: 350px;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+		"g1 g1 g1 g1"
+		"g2 g3 g4 g4"
+		"g2 g3 g5 g6"
+		"g7 g7 g7 g7";
+    justify-items: stretch;
+    height: 100%;
+    width:  100%;
+    background-color: #ffffff;
+}
+
+#g1 {
+    padding: 1%;
+    max-height: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #34d4fc;
+    grid-area: g1;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+#x {
+    background: whitesmoke;
+    text-align: right;
+    padding: 1%;
+    min-height: 30%;
+    min-width: 20%;
+    font-size: 14px;
+}
+
+#y {
+    background: whitesmoke;
+    padding: 1%;
+    min-height: 30%;
+    min-width: 20%;
+    font-size: 14px;
+}
+
+#text4{
+    text-align: center;
+}
+
+#g2 {
+    padding: 0 3% 0;
+    margin: 0 10% 0 0;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6b660;
+    grid-area: g2;
+}
+
+#g3 {
+    padding: 0 3% 0;
+    margin: 0 10% 0;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8af67a;
+    grid-area: g3;
+}
+
+#g4 {
+    padding: 0 3% 0;
+    margin: 0 0 0 5%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6b660;
+    grid-area: g4;
+}
+
+#g5 {
+    padding: 0 3% 0;
+    margin: 0 10% 0;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdbd;
+    grid-area: g5;
+}
+
+#g6 {
+    padding: 0 3% 0;
+    margin: 0 0 0 10%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8af67a;
+    grid-area: g6;
+}
+
+#g7 {
+    padding: 1%;
+    display:  flex;
+    align-items: center;
+    background-color: #34d4fc;
+    grid-area: g7;
+    justify-content: space-between;
+}
